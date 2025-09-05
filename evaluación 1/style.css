@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Doto:wght@100..900&family=Gamja+Flower&family=Outfit:wght@100..900&family=Yuji+Syuku&display=swap');
+ {
+  margin: 0;
+  padding: 0;
+   font-family: 'Courier New', monospace;
+}
+
+:root {
+  --mostrando:#A52A2A;
+  --esperando:#6E260E;
+  --flotando: #7B3F00;
+}
+ 
+
+
+
+body{
+  background: #EADDCA;
+  color: #000;
+
+}
+
+
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(90% - 2rem), 500px);
+    height:auto;
+    padding: 1rem;
+    margin: auto;
+    background: white;
+    border-radius: .5rem;
+    z-index: 9999;
+     text-align: center;
+}
+
+
+.cute {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  ;
+}
+
+
+.cute2, p {
+  font-family: "Yuji Syuku", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  ;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-top: 10rem;
+}
+
+a{
+  color: darkred  ;
+}
+}
+
+a{
+  color: #00;
+  text-decoration: none;
+  transition: all ease .5s;
+}
+
+a:hover{
+  color:#D27D2D;
+  text-decoration: underline;
+  transition: all ease .5s;
+}
+
+a:hover:after{
+  content:"🐜";
+}
+
+
+
+p{
+  padding:0.5rem 0;
+}
+
+nav{
+  margin:1rem 0;  
+}
+
+nav a{
+  line-height: 1;
+  text-decoration: none;
+  color:whitesmoke;
+  margin:0 1rem 0 0;
+  padding:0.3rem 1rem;
+  background:var(--esperando);
+  border-radius: .6rem;
+  transition:all ease .75s;
+}
+
+nav a:hover{
+  color:white;
+  background:var(--flotando);  
+  transition:all ease .75s;
+}
+
+nav a.active{
+  color:black;
+  background:var(--mostrando);
+}
